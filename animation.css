@@ -1,0 +1,47 @@
+
+.animation-right {
+    animation-name: fromRight;
+    animation-duration: 1s;
+    transition: .5s;
+}    
+.animation-left{
+    animation-name: fromLeft;
+    animation-duration: 1s;
+    transition: .5s;
+}
+@keyframes fromRight{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fromLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* ----------------------animation-------------------------- */
+  .animation {
+/* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(20px); */
+    }
+/* При добавлении этого класса срабатывает анимация  */
+  .animation.animation-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+  }
+
+
+  

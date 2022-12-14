@@ -1,0 +1,537 @@
+
+@import url(./animation.css );
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+}
+
+html{scroll-behavior: smooth;}
+h1{color: #282C4B; font-size: 4.375rem; font-weight: bold;}
+h2{ color: #282C4B; font-weight: bold; font-size: 40px;}
+h3{font-size: 30px;}
+p{color: #282c4bab; font-size: 36px;}
+span{color:#FC4772;}
+.color-red{color: #FC4772;}
+.color-blue{color: #282c4bab;}
+a{text-decoration: none;}
+
+
+.btn{
+    font-size: 20px;
+    padding: 20px 48px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px #fc497368;
+    transition: 0.3s;
+
+}
+.btn:hover{
+    transition: 0.3s;
+    transform: translateY(10px);
+    border: 2px solid #FC4974;
+    box-shadow: 0 3px 5px #FC4974;
+    
+}
+.bg-red{    
+    color: white;
+    background-color: #FC4974;
+}
+.bg-white{
+    color: #FC4974;
+    background-color: white;
+    border: 2px solid #FC4974;
+}
+li{
+    padding: 10px;
+    font-size: 20px;
+    color: #282c4bab;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* -----------------------------------------main-------------------------------------------------------  */
+header{
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+    position: relative;
+}
+
+header .author{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #F17216;
+    padding-bottom: 2%;
+}
+header .intro{
+    width: 100%;
+    line-height: 115%;
+    padding-bottom: 3%;
+    letter-spacing: 1px;
+}
+.header p{
+    width: 100%;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    padding-bottom: 1%;
+}
+header .mainImg{
+    height: auto;
+    float: right;
+    max-width: 50%;
+}
+header .btns{
+    width: 98%;
+    display: flex;
+    gap: 2%;
+}
+
+header .hidden{
+display: none;
+    /* visibility: hidden; */
+}
+
+
+/* --------------------------------about--------------------------------------- */
+.about{
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background: url(./components/Main-bg-Img.png) no-repeat;
+    background-position: 0% 100%;
+}
+.about-left{
+    max-width: 50%;
+    height: auto;
+}
+.about-right{
+    width: 50%;
+    flex-direction: column;
+}
+.about ul{
+    padding: 7% 0;
+}
+.about ul li{
+    display: flex;
+    width: 100%;
+}
+.about ul img{
+    width: 30px;
+    height: 30px;
+    padding-right: 2%;
+}
+
+
+
+
+
+/* ------------------------------------buns----------------------------------------- */
+.buns{
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./components/Main-bg-Img.png) no-repeat;
+    background-position: 0% 100%;
+}
+.buns h2{
+    line-height: 130%;
+}
+.buns .bunsHero{
+    max-width: 40%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+.buns p{
+    padding: 3% 0 5% 0;
+}
+.bunsRow{
+    width: 70%;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    gap: 30px;
+}
+.bunsBox{
+    background-color: white;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-shadow: 0 10px 30px #fc497342;
+}
+
+
+/* ---------------------------------------Review---------------------------------- */
+.review{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5%;
+}
+.gallery img{
+    width: 28%;
+    padding: 0 30px;
+    height: 50vh;
+}
+.gallery .different{
+    height: 100%;
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.gallery::after{
+    cursor: pointer;
+    align-self: center;
+    content: url(./img/arrow_prev.png);
+}
+.gallery::before{
+    cursor: pointer;
+    align-self: center;
+    content: url(./img/arrow_next.png);
+}
+
+/* ---------------------------------------Ways---------------------------------------- */
+.ways{
+    margin-top: 5%;
+    width: 100%;
+    height: 80vh;
+}
+.waysRow{
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+.waysBox{
+    background-color: white;
+    box-shadow: 0 15px 20px #fc49734d;
+    margin: 0 5%;
+    border-radius: 15px;
+    padding: 4% 5%;
+}
+.waysRow img{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    align-self: center;
+}
+.waysBox ul{
+    margin-top: 10px;
+}
+.waysBox li{
+    line-height: 70%;
+    color: #282C4B;
+    /* list-style-type:disc; */
+    /* list-style: circle; */
+}
+
+
+/* -----------------------------------------------packets------------------------------------------------------- */
+.packetRow{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.packetBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+    margin-top: 5%;
+    box-shadow: 0 0 20px #fc497342;
+    border-radius: 15px;
+    padding: 30px 30px;
+    background: white;
+}
+.dva{
+    margin-top: 115px;
+}
+.packetBox ul{
+    margin: 5% 0 5% 10%;
+}
+.packetBox li{
+    line-height: 100%;
+    color: #282C4B;
+}
+
+
+
+/* ---------------------------------footer----------------------------------- */
+footer{
+    width: 100%;
+    height: 30vh;
+    background: #ffd1de;
+}
+footer .content{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+footer .whatsapp{
+    display: flex;
+    align-items: center;
+}
+footer img{
+    padding-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+footer h3{
+    font-weight: normal;
+}
+footer h4{
+    font-weight: normal;
+    padding: 20px 0;
+}
+footer h5{
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+/* -------------Планшет--------- */
+@media screen and (max-width: 1536px){
+    .main-img{
+        width: 40%;
+    }
+    main h1{
+        font-size: 350%;
+    }
+    main p{
+        width: 200px;
+        font-size: 170%;
+    }
+    main h2{
+        font-size: 200%;
+    }
+    .author{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .btn{
+        font-size: 20px;;
+    }
+
+};
+
+
+/* ------------------------------noutbook---------------------------------------------- */
+@media screen and (max-width: 1190px) {
+    .gallery{
+        width: 100%;
+        
+    }    
+    .gallery img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------------Телефон------------------------------------------ */
+@media screen and (max-width: 995px) {
+    
+    .mainImg{
+        width: 100%;
+        display:none;
+    }
+    header .hidden{
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+    }
+    header .btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .btn{
+        width: 83%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left{
+        width: 100%;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    
+}
+
+/* -------------------------------phone------------------------- */
+@media screen and (max-width: 630px){
+    .container{
+        width: 90%;
+    }
+    header{
+        height: 110vh;
+    }
+    header .author{
+        font-size: 3vw;
+        text-align: center;
+    }
+    header .intro{
+        font-size: 9vw;
+    }
+    header .subIntro{
+        padding: 20px 0px;
+        font-size: 4vw;
+        width: 100%;
+    }
+    header h2{
+        font-size: 4vw;
+    }
+    header .start{
+        display: none;
+    }
+    header .btns{
+        width: 98%;
+    }
+    header .btn{
+        width: 85%;
+        text-align: center;
+    }
+    header .bg-white{
+        margin-top: 3%;
+    }
+    /* about */
+    .about{
+        margin: 0 auto;
+        width: 100%;
+        height: 120vh;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        margin: 0 auto;
+       width: 100%; 
+    }
+    .about h2{
+        font-size: 7vw;
+    }
+    .about li{
+        font-size: 3.5vw;
+    }
+    .about .btnBox{
+        width: 100%;
+    }
+    .about .btn{
+        font-size: 3vw;
+        width: 100%;
+    }
+    .buns{
+        height: 170vh;
+    }
+    .buns h2{
+        font-size: 6vw;
+    }
+    .buns .bunsHero{
+        width: 100%;
+        position: static;
+        margin-left: 150px;
+    }
+    .buns p{
+        font-size: 3.5vw;
+    }
+    .buns .bunsRow{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .buns .bunsBox{
+        width: 100%;
+    }
+    .review{
+    height: 90vh;
+    overflow: hidden;
+    }
+    .review h2{
+        font-size: 5vw;
+    }
+    .review .gallery{
+        padding: 7% 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .review img{
+        width: 100%;
+        height: 20vh;
+    }
+    .review .btnBox{
+        width: 100%;
+    }
+
+    .ways{
+        height: 100vh;
+    }
+    .waysRow{
+        padding: 30px 0;
+        display: block;
+    }
+    .waysBox{
+        margin: 20px 0;
+    }
+    .ways ul{
+        margin-left: 30px;
+    }
+    .ways img{
+        display: none;
+    }
+
+    .packet{
+        height: 160vh;
+        width: 100%;
+    }
+    .packetRow{
+        display: block;
+    }
+    .packetBox{
+        width: 90%;
+        height: auto;
+    }
+    
+
+}
+ 
