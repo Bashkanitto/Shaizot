@@ -15,7 +15,6 @@
 ### Site screenshotes
 ![image](https://user-images.githubusercontent.com/86559848/222451503-89e11151-d4cc-4a6c-8c12-0220b03ce221.png)
 ![image](https://user-images.githubusercontent.com/86559848/222451582-878691c6-bd9e-4837-a6ea-40bf6fad1ed3.png)
-![image](https://user-images.githubusercontent.com/86559848/222451626-6ca87f63-8570-402f-83ae-2fc6ef88bf93.png)
 ![image](https://user-images.githubusercontent.com/86559848/222451675-28db8b61-8f05-4b68-a3ba-df6ef17c5481.png)
 ![image](https://user-images.githubusercontent.com/86559848/222451764-9fb8365b-3e8e-46b9-8366-0bf6778fcf84.png)
 ![image](https://user-images.githubusercontent.com/86559848/222451875-43eeeea9-ae49-4c29-9f6b-7a3fcdcea595.png)
